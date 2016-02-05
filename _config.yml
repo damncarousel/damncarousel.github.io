@@ -9,7 +9,7 @@
 title: DPF Banchan
 email: david.ko@damncarousel.com
 description: > # this means to ignore newlines until "baseurl:"
-  A blog brought to you by David Ko, a developer and music producer in NYC.
+  A blog brought to you by David Ko, a Ruby/JavaScript/Go developer and music producer based in New York City.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
