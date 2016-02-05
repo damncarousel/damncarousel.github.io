@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First!: 2 cool things about npm's package.json"
+title: "001: The main attribute in a package.json"
 date: 2016-02-04
 categories: development javascript npm
 ---
@@ -42,3 +42,29 @@ Where `index.js` may look something like this:
 
   module.exports = FarmCow;
 {% endhighlight %}
+
+What those two attributes in the `package.json` are saying is that:
+
+  - when you're trying to require the npm that I'm bundled with, *use my name attribute* (in this case, `farm-cow`)
+  - when you do require me, the only API that I will expose will be whatever is exported in the file that my `main` attribute is set to.
+
+Thus, given the above 2 files as an npm, you'd get the following:
+
+{% highlight javascript %}
+  var FarmCow = require('farm-cow');
+  FarmCow
+  // => [Function: FarmCow]
+{% endhighlight %}
+
+- - -
+
+#### So, what did we learn?
+
+  - The `package.json` serves several very important purposes but the most important ones are setting the module name with which it gets 
+    required by in other projects.
+  - Set the `main` attribute to the single JS file that serves as the entry-point to your module.
+  - Ensure that this JS file exposes only the pieces that you want it to, via tailoring the assignment of `module.exports` to your needs.
+
+Now go forth and write highly modularized and de-coupled code!
+
+-David
