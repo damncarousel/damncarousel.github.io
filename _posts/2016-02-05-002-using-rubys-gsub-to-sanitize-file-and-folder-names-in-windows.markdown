@@ -60,7 +60,7 @@ The proper regular expression for this would then be:
 
 taking proper care to both:
 
-* escape any reserved characters with a backslash (which coincidentally is nearly all of them). 
+* escape any reserved characters with a backslash (the forward and backslash characters)
 * enclose the regex with square brackets to ensure that regex looks to match only a single character within the entire array of characters, rather than
   to match an all-at-once occurrence of `?*"/\><|:`
 
@@ -68,7 +68,7 @@ Testing in an `irb` console shows that the regular expression does exactly what 
 
 {% highlight ruby %}
   str = "I Am : An Inva|id Folder Name?"
-  str.gsub(/[\?\*"\/\\><\|:]/, " ")
+  str.gsub(/[?*"\/\\><|:]/, " ")
 
   #=> "I Am   An Inval d Folder Name "
 {% endhighlight %}
