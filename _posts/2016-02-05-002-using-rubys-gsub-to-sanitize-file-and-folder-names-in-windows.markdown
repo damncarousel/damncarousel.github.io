@@ -24,6 +24,7 @@ and replaces them with a single whitespace character.
 #### The `String#gsub()` method
 
 The first argument to the `gsub()` method can be one of two things:
+
 * a string literal: In this case, the method searches the string for any occurrence of the string passed to it, and replaces it with the 2nd parameter.
 * a regular expression: In this case, the method searches for parts of the string that match the regular expression, and replaces them with the 2nd parameter.
 
