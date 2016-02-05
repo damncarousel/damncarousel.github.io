@@ -56,7 +56,7 @@ into this string:
 
 The proper regular expression for this would then be:
 
-`[\?\*"\/\\><\|:]` 
+`[?*"\/\\><|:]` 
 
 taking proper care to both:
 
