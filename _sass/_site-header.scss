@@ -1,8 +1,14 @@
 .site-header {
   padding-top: 68px;
-  padding-bottom: 61px;
+  padding-bottom: 68px;
   &__logo {
     display: block;
     margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    font-family: "Lato";
+    font-size: 3em;
+    font-weight: 400;
   }
 }
